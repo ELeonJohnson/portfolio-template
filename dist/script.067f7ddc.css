@@ -87,7 +87,24 @@ table {
       width: 400px; }
   .home .content-area .profile-section {
     vertical-align: top;
-    display: inline-block; }
+    display: inline-block;
+    padding: 20% 0 0 0;
+    max-width: 500px; }
+    .home .content-area .profile-section .profile h1 {
+      font-size: 2.3rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 0 0 1rem 0; }
+      .home .content-area .profile-section .profile h1 span {
+        color: #96858F; }
+    .home .content-area .profile-section .profile h5 {
+      font-size: 1.1rem;
+      margin: 0 0 2rem; }
+    .home .content-area .profile-section .profile p {
+      color: #a9a9a9;
+      font-weight: 300;
+      line-height: 1.4;
+      margin: 0 0 2rem 0; }
 
 * {
   box-sizing: border-box; }
