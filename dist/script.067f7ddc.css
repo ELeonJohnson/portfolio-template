@@ -46,9 +46,15 @@ table {
   border-spacing: 0; }
 
 .home .logo {
-  background: #fefefe;
-  height: 100px;
-  width: 200px; }
+  border: 5px solid #D5D5D5;
+  height: 130px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #D5D5D5;
+  line-height: 0; }
 
 .home .info-section {
   padding: 54px;
@@ -69,6 +75,13 @@ table {
       font-weight: 300;
       color: #fefefe;
       margin: 0.2rem 0 1.6rem; }
+  .home .info-section .icon-section a {
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0 10px; }
+    .home .info-section .icon-section a:first-child {
+      padding: 0 10px 0 0; }
 
 .home .content-area {
   margin-left: 35%;
@@ -115,14 +128,15 @@ html, body {
   font-family: 'Barlow Semi Condensed', sans-serif;
   height: 100%; }
 
-.hamburger-icon {
+.menu-icon {
   position: fixed;
   right: 36px;
   top: 36px;
-  padding: 20px; }
-  .hamburger-icon .fa {
+  padding: 20px;
+  z-index: 11; }
+  .menu-icon .fa-bars {
     font-size: 2rem;
-    color: #6D7993; }
+    color: #D5D5D5; }
 
 .primary-btn {
   background: #6D7993;
@@ -150,3 +164,37 @@ html, body {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 500; }
+
+#menu {
+  background: #6D7993;
+  position: fixed;
+  width: 100%;
+  transform: translate3d(-100%, 0, 0);
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all .5s ease-in-out; }
+  #menu nav {
+    width: 400px;
+    text-align: center; }
+    #menu nav a {
+      font-size: 2.3rem;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+      color: #D5D5D5; }
+      #menu nav a:hover {
+        color: #a9a9a9; }
+
+.menu-active .menu-icon .fa-times {
+  color: #D5D5D5; }
+
+.menu-active #menu {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(0, 0, 0); }
