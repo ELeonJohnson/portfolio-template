@@ -43,6 +43,9 @@
                 text-decoration: none;
                 font-size: 2rem;
                 padding: 0 10px;
+                &:hover {
+                    color: $color2;
+                }
                 &:first-child {
                     padding: 0 10px 0 0;
                 }
@@ -51,6 +54,7 @@
     }
 
     .content-area {
+        background: $color5;
         margin-left: 35%;
         width: 65%;
         background: $color3;
@@ -67,6 +71,9 @@
             top: 56px;
             left: -210px;
             width: 400px;
+            -webkit-box-shadow: 9px 20px 80px 6px rgba(179,179,179,0.59);
+            -moz-box-shadow: 9px 20px 80px 6px rgba(179,179,179,0.59);
+            box-shadow: 9px 20px 80px 6px rgba(179,179,179,0.59);
           }
         }
        

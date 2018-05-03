@@ -22,7 +22,7 @@ html,body {
 
     .fa-bars{
         font-size: 2rem;
-        color: $color5;
+        color: $color1;
     }
 }
 
@@ -39,6 +39,12 @@ html,body {
     letter-spacing: 3px;
     font-weight: 500;
     margin-right: 15px;
+    text-decoration: none;
+    transition: $btnTransitions;
+
+    &:hover {
+        background: $color2;
+    }
 }
 
 .white-btn {
@@ -53,6 +59,12 @@ html,body {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 500;
+    text-decoration: none;
+    transition: $btnTransitions; 
+
+    &:hover {
+        border-color: $color2;
+    }
 }
 
 #menu  {
