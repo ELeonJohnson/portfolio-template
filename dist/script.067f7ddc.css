@@ -96,7 +96,7 @@ table {
       line-height: 1.2;
       margin: 0 0 1rem 0; }
       .home .content-area .profile-section .profile h1 span {
-        color: #96858F; }
+        color: #6D7993; }
     .home .content-area .profile-section .profile h5 {
       font-size: 1.1rem;
       margin: 0 0 2rem; }
@@ -114,3 +114,39 @@ html, body {
   background: #6D7993;
   font-family: 'Barlow Semi Condensed', sans-serif;
   height: 100%; }
+
+.hamburger-icon {
+  position: fixed;
+  right: 36px;
+  top: 36px;
+  padding: 20px; }
+  .hamburger-icon .fa {
+    font-size: 2rem;
+    color: #6D7993; }
+
+.primary-btn {
+  background: #6D7993;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: #272727;
+  padding: 15px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin-right: 15px; }
+
+.white-btn {
+  border: 4px solid #6D7993;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: #272727;
+  padding: 12px 27px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 500; }
