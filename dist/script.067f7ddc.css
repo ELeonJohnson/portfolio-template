@@ -288,35 +288,66 @@ table {
   width: 65%;
   background: #fefefe;
   height: 100%; }
-  .contact .content-area .img-container {
+  .contact .content-area .form-container {
     display: inline-block;
     width: 30%;
     position: relative;
     height: 100%; }
-    .contact .content-area .img-container .user-img img {
+    .contact .content-area .form-container .form-section {
       position: absolute;
       top: 56px;
       left: -210px;
       width: 400px;
+      padding: 46px;
+      background: #272727;
+      color: #fefefe;
       -webkit-box-shadow: 9px 20px 80px 6px rgba(179, 179, 179, 0.59);
       -moz-box-shadow: 9px 20px 80px 6px rgba(179, 179, 179, 0.59);
       box-shadow: 9px 20px 80px 6px rgba(179, 179, 179, 0.59); }
-  .contact .content-area .profile-section {
+      .contact .content-area .form-container .form-section h4 {
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem; }
+      .contact .content-area .form-container .form-section input[type="text"], .contact .content-area .form-container .form-section input[type="email"], .contact .content-area .form-container .form-section textarea {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #a9a9a9;
+        margin-bottom: 2rem;
+        font-size: .8rem;
+        text-transform: uppercase;
+        line-height: 1.1;
+        padding: 15px 0;
+        color: #a9a9a9; }
+      .contact .content-area .form-container .form-section button[type="submit"] {
+        border: none;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        text-align: center;
+        color: #272727;
+        padding: 17px 30px;
+        text-transform: uppercase;
+        width: 100%;
+        font-size: 1rem;
+        letter-spacing: 3px;
+        background-color: #6D7993; }
+  .contact .content-area .contact-section {
     vertical-align: top;
     display: inline-block;
-    padding: 20% 0 0 0;
+    padding: 20% 0 0;
     max-width: 500px; }
-    .contact .content-area .profile-section .profile h1 {
+    .contact .content-area .contact-section .profile h1 {
       font-size: 2.3rem;
       font-weight: 500;
       line-height: 1.2;
       margin: 0 0 1rem 0; }
-      .contact .content-area .profile-section .profile h1 span {
+      .contact .content-area .contact-section .profile h1 span {
         color: #6D7993; }
-    .contact .content-area .profile-section .profile h5 {
+    .contact .content-area .contact-section .profile h5 {
       font-size: 1.1rem;
       margin: 0 0 2rem; }
-    .contact .content-area .profile-section .profile p {
+    .contact .content-area .contact-section .profile p {
       color: #a9a9a9;
       font-weight: 300;
       line-height: 1.4;
