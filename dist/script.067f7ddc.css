@@ -251,9 +251,12 @@ table {
           right: 0;
           left: 0;
           opacity: 0;
-          transition: all .3s ease-in-out; }
+          transition: all .3s ease-in-out;
+          overflow: hidden; }
           .portfolio .content-area .portfolio-section .project-section .project-box .grey-bg:hover {
             opacity: .5; }
+            .portfolio .content-area .portfolio-section .project-section .project-box .grey-bg:hover .project-info .project-title {
+              transform: translate3d(0, 0, 0); }
           .portfolio .content-area .portfolio-section .project-section .project-box .grey-bg .project-info {
             position: absolute;
             bottom: 0;
@@ -262,12 +265,9 @@ table {
             .portfolio .content-area .portfolio-section .project-section .project-box .grey-bg .project-info .project-title {
               font-size: 1.8rem;
               text-transform: uppercase;
-              font-weight: 700; }
-            .portfolio .content-area .portfolio-section .project-section .project-box .grey-bg .project-info .fa-long-arrow-alt-right {
-              position: absolute;
-              bottom: 56px;
-              right: 56px;
-              font-size: 3rem; }
+              font-weight: 700;
+              transform: translate3d(-200px, 0, 0);
+              transition: all .4s ease-in-out; }
         .portfolio .content-area .portfolio-section .project-section .project-box h5 {
           font-weight: 500;
           font-size: 1.3rem;

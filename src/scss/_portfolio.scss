@@ -53,9 +53,16 @@
                             left: 0;
                             opacity: 0;
                             transition: all .3s ease-in-out;
+                            overflow: hidden;
 
                             &:hover {
                                 opacity: .5;
+                                
+                                .project-info {
+                                    .project-title {
+                                        transform: translate3d(0, 0, 0);
+                                    }
+                                }
                             }
 
                             .project-info {
@@ -68,14 +75,10 @@
                                     font-size: 1.8rem;
                                     text-transform: uppercase;
                                     font-weight: 700;
+                                    transform: translate3d(-200px, 0, 0);
+                                    transition: all .4s ease-in-out;
                                 }
 
-                                .fa-long-arrow-alt-right {
-                                    position: absolute;
-                                    bottom: 56px;
-                                    right: 56px;
-                                    font-size: 3rem;
-                                }
                             }
                         }
                     
