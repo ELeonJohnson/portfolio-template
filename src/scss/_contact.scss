@@ -11,6 +11,7 @@
         width: 65%;
         background: $color3;
         height: 100%;
+       
       
         .form-container {
         display: inline-block;
@@ -20,12 +21,14 @@
         
         
         .form-section {
+            overflow-y: auto;
+            overflow-x: hidden;
             position: absolute;
             top: 56px;
             left: -210px;
             width: 400px;
-           padding: 46px;
-           background: $color4;
+            padding: 46px;
+            background: $color4;
         
             color: $color3;
             -webkit-box-shadow: 9px 20px 80px 6px rgba(179,179,179,0.59);
@@ -71,10 +74,12 @@
         .contact-section {
             vertical-align: top;
             display: inline-block;
-            padding: 20% 0 0 ;
-            max-width: 500px;
+            padding: 56px;
+            width: 70%;
+           
+            float: right;
             
-            .profile {
+            .contact-info {
                 h1 {
                     font-size: 2.3rem;
                     font-weight: 500;
@@ -85,17 +90,33 @@
                         color: $color1;
                     }
                 }
-                h5 {
-                    font-size: 1.1rem;
-                    margin: 0 0 2rem;
-                }
 
-                p {
-                    color: $color6;
-                    font-weight: 300;
-                    line-height: 1.4;
-                    margin: 0 0 2rem 0;
+                .contact-box {
+                    max-width: 600px;
+                    width: 100%;
+                    padding: 30px;
+                    transition: all 0.5s ease-in-out;
+                    cursor: pointer;
+                    
+                    &:hover {
+                        -webkit-box-shadow: 9px 20px 80px 6px rgba(0,0,0,0.12);
+                        -moz-box-shadow: 9px 20px 80px 6px rgba(0,0,0,0.12);
+                        box-shadow: 9px 20px 80px 6px rgba(0,0,0,0.12);
+                    }
+                    h5 {
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                        margin: 0 0 1.5rem;
+                    }
+    
+                    p {
+                        color: $color6;
+                        font-weight: 300;
+                        line-height: 1.4;
+                        margin: 0 0 2rem 0;
+                    }
                 }
+                
             }
         }
 

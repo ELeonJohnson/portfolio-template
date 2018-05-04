@@ -294,6 +294,8 @@ table {
     position: relative;
     height: 100%; }
     .contact .content-area .form-container .form-section {
+      overflow-y: auto;
+      overflow-x: hidden;
       position: absolute;
       top: 56px;
       left: -210px;
@@ -335,23 +337,35 @@ table {
   .contact .content-area .contact-section {
     vertical-align: top;
     display: inline-block;
-    padding: 20% 0 0;
-    max-width: 500px; }
-    .contact .content-area .contact-section .profile h1 {
+    padding: 56px;
+    width: 70%;
+    float: right; }
+    .contact .content-area .contact-section .contact-info h1 {
       font-size: 2.3rem;
       font-weight: 500;
       line-height: 1.2;
       margin: 0 0 1rem 0; }
-      .contact .content-area .contact-section .profile h1 span {
+      .contact .content-area .contact-section .contact-info h1 span {
         color: #6D7993; }
-    .contact .content-area .contact-section .profile h5 {
-      font-size: 1.1rem;
-      margin: 0 0 2rem; }
-    .contact .content-area .contact-section .profile p {
-      color: #a9a9a9;
-      font-weight: 300;
-      line-height: 1.4;
-      margin: 0 0 2rem 0; }
+    .contact .content-area .contact-section .contact-info .contact-box {
+      max-width: 600px;
+      width: 100%;
+      padding: 30px;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer; }
+      .contact .content-area .contact-section .contact-info .contact-box:hover {
+        -webkit-box-shadow: 9px 20px 80px 6px rgba(0, 0, 0, 0.12);
+        -moz-box-shadow: 9px 20px 80px 6px rgba(0, 0, 0, 0.12);
+        box-shadow: 9px 20px 80px 6px rgba(0, 0, 0, 0.12); }
+      .contact .content-area .contact-section .contact-info .contact-box h5 {
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin: 0 0 1.5rem; }
+      .contact .content-area .contact-section .contact-info .contact-box p {
+        color: #a9a9a9;
+        font-weight: 300;
+        line-height: 1.4;
+        margin: 0 0 2rem 0; }
 
 * {
   box-sizing: border-box; }
