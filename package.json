@@ -1,6 +1,7 @@
 {
   "name": "eport",
   "version": "1.0.0",
+  "homepage": "https://eleonjohnson.github.io/EPort",
   "description": "",
   "main": "index.js",
   "scripts": {
