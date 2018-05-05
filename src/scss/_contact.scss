@@ -76,7 +76,6 @@
             display: inline-block;
             padding: 56px;
             width: 70%;
-           
             float: right;
             
             .contact-info {
@@ -122,4 +121,199 @@
 
      
     }
+}
+
+//Phone
+@media (min-width: 0px) and (max-width: 767px) {
+    .contact {
+
+        .menu-icon {
+            top: -3px;
+            right: 20px;
+            color: white;
+            
+            .fa-bars {
+                color: white;
+            }
+        }
+        .content-area {
+            &:after {
+                height: auto;
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+        .info-section {
+         
+            position: static;
+            padding: 10px 20px;
+        
+        .logo {
+            height: 50px;
+            width: 70px;
+            font-size: 1rem;
+            }
+     
+        }
+        .content-area {
+            margin-left: 0;
+            width: 100%;
+            .img-container {
+                height: auto;
+                width: 100%;
+                padding: 56px 20px 0;
+                .form-section {
+                    position: static;
+                    width: 100%;
+                    height: auto;
+                    overflow: auto;
+                }
+            }
+            .contact-section {
+                width: 70%;
+                float: right;
+                padding: 20% 20px 0;
+
+                
+            }
+        }
+    }  
+}
+//Tablet
+@media (min-width: 768px) and (max-width: 991px){
+    .contact {
+        .info-section{
+            .icon-section  {
+                a {
+                    font-size: 1.4rem;
+                }
+            }
+        } 
+
+        .content-area {
+            height: auto;
+        
+            &:after {
+                height: auto;
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .img-container {
+                height: auto;
+                width: 100%;
+                padding: 56px 20px 0;
+                .form-section {
+                    position: static;
+                    width: 100%;
+                    height: auto;
+                    overflow: auto;
+                }
+            }
+            .contact-section {
+                width: 70%;
+                float: right;
+                padding: 20% 20px 0;
+                max-width: 800px;
+
+                .white-btn,
+                .primary-btn {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }  
+}
+//Laptop
+@media (min-width: 992px ) and
+(max-width: 1199px ) {
+    .contact {
+        
+        .content-area {
+            height: auto;
+            &:after {
+                height: auto;
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .img-container {
+                padding: 56px 20px 0;
+                height: auto;
+                float: right;
+                width: 100%;
+                .form-section {
+                    position: static;
+                    width: 100%;
+                    float: right;
+                    height: auto;
+                    overflow: auto;
+                }
+            }
+
+            .contact-section {
+                width: 70%;
+                float: right;
+                padding: 20px 20px 0;
+                max-width: 800px;
+
+                .primary-btn, .white-btn {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }  
+}
+//Extra Big
+@media (min-width: 1200px ){
+    .contact {
+       
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+                float: right;
+                
+                
+                .form-section {
+                    //position: static;
+                    //width: 100%;
+                    left: -157px;
+                    width: 400;
+                }
+            }
+            .contact-section {
+                width: 70%;
+                float: right;
+                padding: 20% 60px 0;
+                max-width: 800px;
+            }
+        }
+    }  
+}
+
+@media (min-width: 1500px ){
+    .contact {
+       
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+                float: right;
+                
+                
+                .form-section {
+                    //position: static;
+                    //width: 100%;
+                    left: -250px;
+                    width: 500;
+                }
+            }
+            .contact-section {
+                width: 70%;
+                float: right;
+                padding: 20% 60px 0;
+                max-width: 800px;
+            }
+        }
+    }  
 }
