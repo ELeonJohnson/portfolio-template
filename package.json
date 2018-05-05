@@ -1,16 +1,25 @@
 {
   "name": "eport",
   "version": "1.0.0",
-  "homepage": "https://eleonjohnson.github.io/EPort",
-  "description": "",
   "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "watch": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ELeonJohnson/ELeonJohnson.github.io.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "node-sass": "^4.9.0"
-  }
+  "bugs": {
+    "url": "https://github.com/ELeonJohnson/ELeonJohnson.github.io/issues"
+  },
+  "homepage": "https://github.com/ELeonJohnson/ELeonJohnson.github.io#readme",
+  "description": ""
 }
