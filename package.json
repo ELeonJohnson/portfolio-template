@@ -7,7 +7,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "watch": "parcel src/index.html",
+    "watch": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ELeonJohnson/ELeonJohnson.github.io/issues"
+    "url": "https://github.com/ELeonJohnson/ELeonJohnson.github.io/"
   },
   "homepage": "https://github.com/ELeonJohnson/ELeonJohnson.github.io#readme",
   "description": ""
