@@ -1,0 +1,193 @@
+.home {
+    
+    .info-section {
+        padding: 54px;
+        width: 35%;
+    }
+
+    .content-area {
+        background: $color5;
+        margin-left: 35%;
+        width: 65%;
+        background: $color3;
+        height: 100%;
+        
+      
+        .img-container {
+        display: inline-block;
+        width: 30%;
+        position: relative;   
+        height: 100%;
+        
+        .user-img img {
+            position: absolute;
+            top: 56px;
+            left: -210px;
+            width: 400px;
+            -webkit-box-shadow: 9px 20px 80px 6px rgba(179,179,179,0.59);
+            -moz-box-shadow: 9px 20px 80px 6px rgba(179,179,179,0.59);
+            box-shadow: 9px 20px 80px 6px rgba(179,179,179,0.59);
+          }
+        }
+       
+
+        .profile-section {
+            vertical-align: top;
+            display: inline-block;
+            padding: 20% 0 0 0;
+            max-width: 500px;
+            
+            .profile {
+                h1 {
+                    font-size: 2.3rem;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    margin:0 0 1rem 0;
+                    
+                    span {
+                        color: $color1;
+                    }
+                }
+                h5 {
+                    font-size: 1.1rem;
+                    margin: 0 0 2rem;
+                }
+
+                p {
+                    color: $color6;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    margin: 0 0 2rem 0;
+                }
+            }
+        }
+
+     
+    }
+}
+
+//Phone
+@media (max-width: 767px) {
+    .home {
+
+        .menu-icon {
+            top: -3px;
+            right: 20px;
+            color: white;
+            
+            .fa-bars {
+                color: white;
+            }
+        }
+        .content-area {
+            &:after {
+                height: auto;
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+        .info-section {
+         
+            position: static;
+            padding: 10px 20px;
+        
+        .logo {
+            height: 50px;
+            width: 70px;
+            font-size: 1rem;
+            }
+     
+        }
+        .content-area {
+            margin-left: 0;
+            width: 100%;
+            .img-container {
+                padding: 56px 20px 0;
+                .user-img img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+                float: right;
+                padding: 20% 20px 0;
+
+                
+            }
+        }
+    }  
+}
+//Tablet
+@media (min-width: 768px) and (max-width: 991px){
+    .home {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+                .user-img img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+                float: right;
+                padding: 20% 20px 0;
+
+                .white-btn,
+                .primary-btn {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }  
+}
+//Laptop
+@media (min-width: 992px ) and
+(max-width: 1199px ) {
+    .home {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+                float: left;
+                .user-img img {
+                    //position: static;
+                    //width: 100%;
+                }
+            }
+
+            .profile-section {
+                width: 70%;
+                float: left;
+                padding: 20px 20px 0;
+                max-width: 800px;
+
+                .primary-btn, .white-btn {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }  
+}
+//Extra Big
+@media (min-width: 1200px ){
+    .home {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+                float: left;
+                .user-img img {
+                    //position: static;
+                    //width: 100%;
+                }
+            }
+            .profile-section {
+                width: 70%;
+                float: left;
+                padding: 20% 60px 0;
+                max-width: 800px;
+            }
+        }
+    }  
+}
